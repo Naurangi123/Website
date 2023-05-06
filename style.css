@@ -4,17 +4,18 @@ body {
   text-align: center;
   font-family: "Merriweather", serif;
 }
-#main {
+/* #main {
   display: flex;
 }
 #main div {
-  -ms-flex: 1; /* IE 10 */
+  -ms-flex: 1; /* IE 10 
   flex: 1;
-}
+} */
 #image {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  margin-left: 20px;
 }
 
 h1 {
@@ -62,14 +63,17 @@ a:hover {
   position: relative;
   padding-top: 100px;
   display: flexbox;
+  cursor: pointer;
 }
 .profile {
   background-color: #30e3cb;
   position: relative;
+  cursor: pointer;
   padding: 10px;
 }
 .skills {
   background-color: #30e3cb;
+  cursor: pointer;
 }
 #span {
   color: #102d2d;
@@ -83,10 +87,16 @@ a:hover {
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  cursor: pointer;
+  margin-right: 50px;
 }
+/* .flip {
+  margin-left: 35%;
+} */
 
 .flip-card-inner {
   position: relative;
+  cursor: pointer;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -94,6 +104,7 @@ a:hover {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .flip-card-front,
@@ -103,66 +114,79 @@ a:hover {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  cursor: pointer;
 }
 
 .flip-card-front {
   background-color: #dcf6f1;
   color: black;
+  cursor: pointer;
 }
 
 .flip-card-back {
   color: #102d2d;
   transform: rotateY(180deg);
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .middle-container {
   margin: 0px 0px -8px auto;
   background-color: #30e3cb;
   position: relative;
+  cursor: pointer;
   padding-top: 20px;
 }
 
 .bottom-container {
   background-color: #4d104f;
   padding: 50px 0 20px;
+  position: relative;
+  cursor: pointer;
 }
 
 .skill-row {
   width: 50%;
   margin: 90px auto 90px auto;
   text-align: left;
+  cursor: pointer;
 }
 
 .intro {
   width: 30%;
   margin: auto;
+  cursor: pointer;
 }
 .contact-me {
   width: 40%;
   margin: 40px auto 60px;
+  cursor: pointer;
 }
 
 .contact-message {
   width: 40%;
   margin: 40px auto 60px;
+  cursor: pointer;
 }
 
 .copyright {
   color: #eaf6f6;
   font-size: 0.75rem;
   padding: 20px 0;
+  cursor: pointer;
 }
 .code-img {
   width: 25%;
   float: left;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .chilli-img {
   width: 25%;
   float: right;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .btn {
@@ -214,5 +238,32 @@ a:hover {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .middle-container,
+  body {
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .top-container {
+    width: 100%;
+    cursor: pointer;
+  }
+  .main {
+    position: relative;
+    margin-right: -50px;
+  }
+  .btn {
+    margin: -12px;
+    width: 5%;
+  }
+  .flip {
+    margin-left: 15%;
+  }
+  .intro {
+    transform-origin: 10%;
   }
 }

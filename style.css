@@ -241,9 +241,9 @@ a:hover {
   }
 }
 @media (min-width: 300px) and (max-width: 800px) {
-  .middle-container,
   body {
     width: 100%;
+    background-color: #102d2d;
     position: absolute;
     cursor: pointer;
     z-index: 2;
@@ -253,17 +253,21 @@ a:hover {
     cursor: pointer;
   }
   .main {
+    width: 100%;
     position: relative;
     margin-right: -50px;
   }
   .btn {
+    width: 100%;
     margin: -12px;
     width: 5%;
   }
   .flip {
+    width: 100%;
     margin-left: 15%;
   }
   .intro {
+    width: 100%;
     transform-origin: 10%;
   }
 }

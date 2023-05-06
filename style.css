@@ -4,13 +4,6 @@ body {
   text-align: center;
   font-family: "Merriweather", serif;
 }
-/* #main {
-  display: flex;
-}
-#main div {
-  -ms-flex: 1; /* IE 10 
-  flex: 1;
-} */
 #image {
   height: 200px;
   width: 200px;
